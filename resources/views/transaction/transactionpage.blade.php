@@ -1,4 +1,4 @@
 @extends('master')
 @section('content')
-<h1>Seller</h1>
+<h1>transaction</h1>
 @endsection
