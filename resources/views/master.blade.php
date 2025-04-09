@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Green Cup Dashboard</title>
+    <title>Green Cup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS & Icons -->
@@ -11,10 +12,12 @@
 
     <style>
         body {
-            background-color: #004d00; /* Dark green */
+            background: linear-gradient(135deg, #00cc44 30%, #b2f5c4 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #f1f1f1;
+            color: #ffffff;
+            min-height: 100vh;
         }
+
 
         .navbar {
             background-color: #1c1c1c;
@@ -65,61 +68,78 @@
         }
 
         main.container {
-            /* background-color: #006400; */
             padding: 2rem 1rem;
-            /* border-top-left-radius: 16px;
-            border-top-right-radius: 16px; */
-        }
-
-        .card {
-            background-color: #fff;
-            color: #000;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-            padding: 1.2rem;
-            margin-bottom: 1rem;
-            transition: transform 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        @media (max-width: 767px) {
-            .navbar-nav .nav-item {
-                margin-bottom: 0.25rem;
-            }
         }
 
         .dashboard-box {
-    min-height: 140px;
-    font-size: 1.2rem;
+    height: 200px;
+    background: linear-gradient(145deg, #f9f9f9, #e0ffe8);
+    color: #1a1a1a; /* Darker text */
+    font-size: 1.3rem;
+    font-weight: 800; /* Extra bold */
+    letter-spacing: 0.3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); /* Gentle depth */
+    border-radius: 24px;
+    border: 2px solid #45e0c2;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 2px 5px rgba(0, 0, 0, 0.1),
+        inset 0 1px 2px rgba(255, 255, 255, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    text-align: center;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
-.dashboard-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    cursor: pointer;
-}
 
+
+        .dashboard-box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 24px;
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.35), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .dashboard-box:hover {
+            transform: translateY(-10px);
+            box-shadow:
+                0 14px 28px rgba(0, 0, 0, 0.3),
+                0 24px 48px rgba(0, 0, 0, 0.2),
+                inset 0 1px 2px rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+
+
+        @media (max-width: 767px) {
+            .dashboard-box {
+                height: 160px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-@include('layout.navbar')
-<!-- End Navbar -->
+    <!-- Navbar -->
+    @include('layout.navbar')
+    <!-- End Navbar -->
 
-<main class="container">
-    @yield('content')
-</main>
+    <main class="container">
+        @yield('content')
+    </main>
 
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
