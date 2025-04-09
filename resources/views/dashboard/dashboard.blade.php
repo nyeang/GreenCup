@@ -1,8 +1,11 @@
 @extends('master')
 @section('content')
 
+<h4 class="text-white text-3xl font-bold mb-6 animate-pulse">🌱     Dashboard</h4>
+
 <div class="container py-4">
-    <h3 class="text-white mb-4">Dashboard</h3>
+
+
 
     <div class="row g-4">
         <div class="col-md-4">
