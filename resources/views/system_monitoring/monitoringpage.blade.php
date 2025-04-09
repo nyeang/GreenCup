@@ -1,4 +1,4 @@
 @extends('master')
 @section('content')
-<h1>Feedback</h1>
+<h1>System Monitoring</h1>
 @endsection
