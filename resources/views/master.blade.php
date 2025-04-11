@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('consumer.css') }}">
     <link rel="stylesheet" href="{{ asset('seller.css') }}">
 
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
