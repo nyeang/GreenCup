@@ -1,0 +1,111 @@
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #1a1a1a;
+            background: linear-gradient(to bottom, #1f8a4d, #4ecb8f, #b9f6ce);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dashboard-box {
+            background: #f8fff9;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            color: #1a1a1a;
+            min-height: 150px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.5s ease both;
+        }
+
+        .dashboard-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .dashboard-box .title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .dashboard-box h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .input-group input {
+            background-color: #a5d8a8;
+            border: none;
+            padding: 8px 12px;
+            font-size: 0.95rem;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+            border: 1px solid #28a745;
+        }
+
+        .input-group .btn-success {
+            background-color: #28a745;
+            border: none;
+            padding: 0 16px;
+            transition: 0.3s;
+        }
+
+        .input-group .btn-success:hover {
+            background-color: #218838;
+        }
+
+        .list-group-item {
+            background-color: #f1fdf3;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            transition: background 0.2s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: #d9f5e2;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-box {
+                padding: 16px;
+                margin-bottom: 20px;
+            }
+
+            .dashboard-box h2 {
+                font-size: 1.5rem;
+            }
+
+            .input-group input {
+                font-size: 0.85rem;
+            }
+
+            .list-group-item {
+                font-size: 0.9rem;
+            }
+        }

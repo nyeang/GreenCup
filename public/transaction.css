@@ -1,0 +1,192 @@
+/* 🌿 General Body Background */
+body {
+    background: linear-gradient(to bottom, #1f8a4d, #4ecb8f, #b9f6ce);
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📊 Overview Cards */
+.overview-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.overview-card h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.overview-card h2 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #1f8a4d;
+}
+
+/* 📋 Table Container */
+.table-container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+    padding: 16px;
+}
+
+/* 🧾 Table */
+.table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table thead {
+    background-color: #1f8a4d !important;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.table thead th {
+    background-color: #1f8a4d;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+/* 🎯 Optional Enhancements: Rounded header corners */
+.table thead th:first-child {
+    border-top-left-radius: 12px;
+}
+.table thead th:last-child {
+    border-top-right-radius: 12px;
+}
+
+/* Table Data */
+.table td {
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table tbody tr:hover td {
+    background-color: #f0fdf4;
+    transition: background-color 0.3s ease;
+}
+
+/* ✅ Cafe Avatar */
+.table td .d-flex img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.table td .fw-bold {
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+
+.table td .small {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* 🏷️ Badges */
+.badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+}
+
+.badge.bg-success-subtle {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+/* 🎯 Action Icons */
+.table td.actions-cell {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.table td.actions-cell .icon-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-size: 1.2rem;
+}
+
+.table td.actions-cell .icon-group i {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.table td.actions-cell .icon-group i:hover {
+    color: #1f8a4d;
+}
+
+/* 📱 Responsive Fixes */
+@media (max-width: 768px) {
+    .overview-card {
+        text-align: center;
+    }
+
+    .overview-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .table-container {
+        padding: 12px;
+    }
+
+    .table {
+        min-width: 100%;
+        font-size: 14px;
+    }
+
+    .table th,
+    .table td {
+        padding: 12px 8px;
+    }
+
+    .table td .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table td .d-flex img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .table td .d-flex.gap-3 {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    /* 📱 Bonus: Responsive icon stack */
+    .table td.actions-cell .icon-group {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 1.05rem;
+    }
+}

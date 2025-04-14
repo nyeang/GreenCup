@@ -100,7 +100,7 @@
 </div>
 
 <!-- ✅ JavaScript for Filter & Confirm -->
-<script>
+<!-- <script>
     function searchSellerTable() {
         const input = document.getElementById("searchInput").value.toLowerCase();
         const rows = document.querySelectorAll("#sellerTable tbody tr");
@@ -124,6 +124,6 @@
             alert(`${actionType.charAt(0).toUpperCase() + actionType.slice(1)} action confirmed.`);
         }
     }
-</script>
+</script> -->
 
 @endsection

@@ -1,13 +1,17 @@
-<nav class="navbar navbar-expand-lg navbar-dark px-4 py-3 shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark px-4 py-3 shadow-sm" style="background: linear-gradient(90deg, #14532d, #1e7e34);">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><i class="bi bi-cup-hot-fill me-2"></i>Green Cup</a>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="bi bi-cup-hot-fill me-2"></i><span class="fw-bold">Green Cup</span>
+        </a>
 
+        <!-- Hamburger Toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
             aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarContent">
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
             <ul class="navbar-nav mx-auto gap-lg-3 gap-2 text-center py-2">
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="{{ url('/') }}">
@@ -35,28 +39,23 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('monitoring') ? 'active' : '' }}" href="{{ url('/systemmonitoring') }}">
-                        <i class="bi bi-graph-up-arrow me-1"></i>System Monitoring
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link {{ Request::is('account') ? 'active' : '' }}" href="{{ url('/account') }}">
                         <i class="bi bi-person-fill-gear me-1"></i>Account
                     </a>
                 </li>
-
-                <!-- Mobile icons -->
-                <div class="d-flex justify-content-center gap-2 d-lg-none mt-3">
-                    <button class="btn btn-outline-light"><i class="bi bi-search"></i></button>
-                    <button class="btn btn-outline-light"><i class="bi bi-person-circle"></i></button>
-                </div>
             </ul>
+
+            <!-- Icons inside hamburger (only visible on mobile) -->
+            <div class="d-lg-none d-flex justify-content-center gap-2 mt-3">
+                <button class="btn btn-outline-light rounded-circle" title="Search"><i class="bi bi-search"></i></button>
+                <button class="btn btn-outline-light rounded-circle" title="Profile"><i class="bi bi-person-circle"></i></button>
+            </div>
         </div>
 
-        <!-- Desktop icons -->
+        <!-- Desktop icons (outside collapse) -->
         <div class="d-none d-lg-flex gap-2">
-            <button class="btn btn-outline-light" title="Search"><i class="bi bi-search"></i></button>
-            <button class="btn btn-outline-light" title="Profile"><i class="bi bi-person-circle"></i></button>
+            <button class="btn btn-outline-light rounded-circle" title="Search"><i class="bi bi-search"></i></button>
+            <button class="btn btn-outline-light rounded-circle" title="Profile"><i class="bi bi-person-circle"></i></button>
         </div>
     </div>
 </nav>

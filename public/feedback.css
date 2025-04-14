@@ -1,0 +1,111 @@
+/* 🌿 Page Background */
+body {
+    background: linear-gradient(to bottom, #1f8a4d, #4ecb8f, #b9f6ce);
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📋 Table Container Styling */
+.table-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* 🧾 Feedback Table Base */
+.table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* 🟩 Table Header */
+.table thead {
+    background-color: #1f8a4d;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.table thead th {
+    padding: 16px;
+    text-align: center;
+    border-top: none;
+}
+
+/* Rounded Header Corners */
+.table thead th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 12px;
+}
+
+/* 📄 Table Body */
+.table td {
+    background-color: white;
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+}
+
+/* ✨ Hover Highlight */
+.table tbody tr:hover td {
+    background-color: #f0fdf4;
+    transition: background-color 0.3s ease;
+}
+
+/* 🏷️ Role Badges */
+.badge {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+.bg-primary {
+    background-color: #1f8a4d;
+    color: white;
+}
+
+/* ⭐ Star Rating Icons */
+.bi-star-fill {
+    color: #facc15;
+    font-size: 1rem;
+}
+
+.bi-star {
+    color: #d1d5db;
+    font-size: 1rem;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    .table-container {
+        padding: 12px;
+    }
+
+    .table {
+        min-width: 100%;
+        font-size: 14px;
+    }
+
+    .table th,
+    .table td {
+        padding: 12px 8px;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+}
