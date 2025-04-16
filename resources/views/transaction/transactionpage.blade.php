@@ -29,7 +29,7 @@
 </div>
 
 <!-- Table Section -->
-<div class="transaction-table shadow-sm p-4 rounded bg-white">
+<div class="transaction-table shadow-sm p-4 rounded bg-white table-responsive">
     <table class="table table-hover align-middle">
         <thead class="table-success">
             <tr>

@@ -16,8 +16,8 @@
 </div>
 
 <!-- ✅ Table Section -->
-<div class="seller-table-container">
-    <table class="seller-table" id="sellerTable">
+<div class="seller-table-container table-responsive">
+    <table class="seller-table table-striped" id="sellerTable">
         <thead>
             <tr>
                 <th>ID</th>

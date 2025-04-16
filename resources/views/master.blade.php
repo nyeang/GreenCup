@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('dashboard.css') }}">
     <link rel="stylesheet" href="{{ asset('navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('footer.css') }}">
     <link rel="stylesheet" href="{{ asset('consumer.css') }}">
     <link rel="stylesheet" href="{{ asset('seller.css') }}">
     <link rel="stylesheet" href="{{ asset('transaction.css') }}">
@@ -26,9 +27,13 @@
     @include('layout.navbar')
     <!-- End Navbar -->
 
-    <main class="container">
-        @yield('content')
-    </main>
+    <div class="page-wrapper">
+        <main class="container py-4">
+            @yield('content')
+        </main>
+    </div>
+
+    @include('layout.footer')
 
     <!-- Bootstrap JS -->
 

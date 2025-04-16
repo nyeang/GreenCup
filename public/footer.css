@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-wrapper {
+    min-height: calc(100vh - 80px); /* Adjust 80px to your footer height */
+}
+
+/* Footer styling */
+footer {
+    /* height: 80px; */
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}

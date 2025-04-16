@@ -2,8 +2,6 @@
 
 @section('content')
 
-@vite(['resources/css/app.css', 'resources/js/app.js'])
-
 <h4 class="text-white text-3xl font-bold mb-4" style="margin-left: 12px;">
   🌱 Dashboard
 </h4>
