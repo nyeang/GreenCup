@@ -39,8 +39,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ Request::is('account') ? 'active' : '' }}" href="{{ url('/account') }}">
-                        <i class="bi bi-person-fill-gear me-1"></i>Account
+                    <a class="nav-link {{ Request::is('profile') ? 'active' : '' }}" href="{{ url('/profile') }}">
+                        <i class="bi bi-person-fill-gear me-1"></i>Profile
                     </a>
                 </li>
             </ul>

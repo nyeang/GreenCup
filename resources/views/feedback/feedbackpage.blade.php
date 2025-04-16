@@ -11,7 +11,7 @@
     </div>
 
     <!-- 📋 Feedback Table -->
-    <div class="table-container rounded shadow-sm p-3 bg-white">
+    <div class="table-container shadow-sm p-3 bg-white fade-in-up">
         <div class="table-responsive">
             <table class="table table-borderless align-middle mb-0">
                 <thead class="text-uppercase small fw-semibold" style="background-color:#1f8a4d; color:white;">

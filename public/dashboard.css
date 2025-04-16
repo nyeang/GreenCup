@@ -11,7 +11,9 @@
             background-size: cover;
         }
 
-
+        .fade-in-up {
+            animation: fadeInUp 0.5s ease both;
+        }
 
         @keyframes fadeInUp {
             0% {
@@ -34,7 +36,6 @@
             min-height: 150px;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeInUp 0.5s ease both;
         }
 
         .dashboard-box:hover {
