@@ -89,16 +89,6 @@
 
 
 
-<style>
-    .coffee-icon {
-        font-size: 24px;
-        line-height: 24px;
-        text-align: center;
-        background: none;
-        border: none;
-    }
-</style>
-
 <script>
     const map = L.map('map').setView([11.5564, 104.9282], 13);
 
