@@ -7,7 +7,7 @@ use App\Http\Controllers\SellerController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\SystemMonitoringController;
+use App\Http\Controllers\MapController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -25,4 +25,4 @@ Route::get('/feedback', [FeedbackController::class, 'FeedbackPage'])->name('feed
 
 Route::get('/profile', [ProfileController::class, 'ProfilePage'])->name('profile');
 
-Route::get('/systemmonitoring', [SystemMonitoringController::class, 'SystemMonitoringPage'])->name('systemmonitoring');
+Route::get('/map', [MapController::class, 'MapPage'])->name('map');

@@ -34,15 +34,17 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link {{ Request::is('map') ? 'active' : '' }}" href="{{ url('/map') }}">
+                        <i class="bi bi-map me-1"></i>Map
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link {{ Request::is('feedback') ? 'active' : '' }}" href="{{ url('/feedback') }}">
                         <i class="bi bi-chat-dots-fill me-1"></i>Feedback
                     </a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a class="nav-link {{ Request::is('system-monitoring') ? 'active' : '' }}" href="{{ url('/system-montoring') }}">
-                        <i class="bi bi-pc-display me-1"></i>System Monitoring
-                    </a>
-                </li> --}}
+
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('profile') ? 'active' : '' }}" href="{{ url('/profile') }}">
                         <i class="bi bi-person-fill-gear me-1"></i>Profile

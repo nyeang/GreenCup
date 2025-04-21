@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{ asset('feedback.css') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <!-- Add this line for view-specific styles -->
+    @stack('styles')
 </head>
 
 <body>
@@ -36,11 +39,12 @@
     @include('layout.footer')
 
     <!-- Bootstrap JS -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-
+    <!-- Add this line for view-specific scripts -->
+    @stack('scripts')
 </body>
 
 </html>
+y

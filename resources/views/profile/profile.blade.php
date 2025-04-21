@@ -80,40 +80,11 @@
                 </ol>
             </div>
 
-            <div class="dashboard-box" id="map" style="height: 400px;"></div>
-
         </div>
     </div>
 </div>
 
 
-
-
-<script>
-    const map = L.map('map').setView([11.5564, 104.9282], 13);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    const coffeeIcon = L.icon({
-        iconUrl: 'https://cdn-icons-png.freepik.com/512/5125/5125143.png?ga=GA1.1.1259686564.1739553011', // coffee icon
-        iconSize: [35, 35],       // width and height in pixels
-        iconAnchor: [16, 32],     // point of icon that corresponds to marker location
-        popupAnchor: [0, -32]     // where the popup opens relative to the iconAnchor
-    });
-
-    const branches = [
-        { name: 'Branch 1', lat: 11.5564, lng: 104.9282 },
-        { name: 'Branch 2', lat: 11.5600, lng: 104.9300 }
-    ];
-
-    branches.forEach(branch => {
-        L.marker([branch.lat, branch.lng], { icon: coffeeIcon })
-            .addTo(map)
-            .bindPopup(`<b>${branch.name}</b>`);
-    });
-</script>
 
 
 
